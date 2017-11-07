@@ -8,4 +8,7 @@ storiesOf('Button', module)
   ))
   .add('with some emoji', () => (
     <button onClick={action('clicked')}>😀 😎 👍 💯</button>
+  ))
+  .add('Disabled', () => (
+    <button onClick={action('clicked')} disabled>Disabled Button</button>
   ));
